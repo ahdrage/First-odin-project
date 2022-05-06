@@ -99,18 +99,26 @@ button.sec1{
 .sec2-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+   
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    width: 250px;
     align-items: center;
     padding: 20px;
-    margin: 0;
-    flex: auto;
+}
+
+.text {
+    width: 90px;
+    margin-top: 10px;
+}
+
+.img-container {
+    border: solid 2px #3882f6;
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
 }
 
 .section3 {
