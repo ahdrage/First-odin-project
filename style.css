@@ -2,17 +2,16 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+   
     
 }
 
-.header {
+header {
     display: flex;
     background-color: #1F2937;
     justify-content: space-between;
     padding: 0 200px;
     height: 70px;
-
 }
 
 .logo {
@@ -20,16 +19,17 @@ body {
     font-size: 24px;
     display: flex;
     align-items: center;
-    
 }
 
-.menu {
+nav {
     display: flex;
-    
     align-items: center;
-    
-    color: #E5E7EB;
-   
+    gap: 15px;   
+}
+
+nav a {
+    color: #f9faf8; 
+    text-decoration: none;
 }
 
 h1 {
@@ -39,7 +39,7 @@ h1 {
     margin: 0px;
 }
 
-p {
+p:first-child {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -51,6 +51,15 @@ p {
     height: 400px;
     padding: 0 200px;
     padding-top: 50px;
+}
+
+button.sec1{
+    width: 120px;
+    background-color: #3882f6;
+    color: white;
+    border-radius: 10px;
+    border: 0px;
+    height: 30px;
 }
 
 .sec1-left{
@@ -72,40 +81,100 @@ p {
 
 .section2 {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     color: black; 
-    height: 300px;
+    height: 350px;
 }
 
-ul {
-    list-style: none;
+.sec2-headline {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    justify-content: center;
+}
+
+.sec2-container {
     display: flex;
-    gap: 10px;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    flex: auto;
+}
+
+.section3 {
+    height: 350px;
+    display: flex;
+    background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+blockquote {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color: #1f2937;
+    padding: 0 200px;
+}
+    
+.section4 {
+    height: 350px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sec4-inner {
+    display: flex;
+    flex-direction: row;
+    background-color: #3882f6;
+    width: 800px;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 60px;
     
 }
 
-button {
+
+
+button.sec4{
     width: 120px;
     background-color: #3882f6;
     color: white;
     border-radius: 10px;
-    border: 0px;
+    border: solid 1px white;
     height: 30px    ;
 }
 
-a {
-    text-decoration: none;
-    color: #f9faf8
-
+.sec4-text {
+    display: flex;
+    flex-direction: column;
 }
 
-.footer {
+
+footer {
     background-color: #1F2937;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #f9faf8;
     height: 60px;
-
 }
